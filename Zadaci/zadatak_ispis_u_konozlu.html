@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input id="zadatak" placeholder="Unesite tekst: ">
+    <button onclick="ispis()">Ispisi</button>
+</body>
+
+<script>
+    var polje = [];
+    var counter = 0;
+    
+    function ispis(){
+        var string = document.getElementById("zadatak").value;
+        polje.push(string)
+        counter ++;
+        
+        if(string.includes(".")){
+            console.log(polje)
+            console.log("Broj rijeci: " + counter)
+        }
+    }
+          
+</script>
+
+</html>
